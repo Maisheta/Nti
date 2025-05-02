@@ -27,7 +27,6 @@ class PrivacySettingsScreen extends StatelessWidget {
             title: Text('Last seen and online'),
             subtitle: Text('Everyone'),
             onTap: () {
-              // Navigate to selection screen
             },
             trailing: Icon(Icons.arrow_forward_ios, size: 16),
           ),
@@ -35,7 +34,6 @@ class PrivacySettingsScreen extends StatelessWidget {
             title: Text('Profile photo'),
             subtitle: Text('Everyone'),
             onTap: () {
-              // Navigate to selection screen
             },
             trailing: Icon(Icons.arrow_forward_ios, size: 16),
           ),
@@ -43,7 +41,6 @@ class PrivacySettingsScreen extends StatelessWidget {
             title: Text('About'),
             subtitle: Text('Everyone'),
             onTap: () {
-              // Navigate to selection screen
             },
             trailing: Icon(Icons.arrow_forward_ios, size: 16),
           ),
@@ -53,7 +50,7 @@ class PrivacySettingsScreen extends StatelessWidget {
               "If turned off, you won't send or receive Read receipts. Read receipts are always sent for group chats.",
               style: TextStyle(fontSize: 12),
             ),
-            value: true, // Default value for the switch
+            value: true,
             onChanged: (bool value) {
               // Handle switch toggle
             },
@@ -63,7 +60,6 @@ class PrivacySettingsScreen extends StatelessWidget {
             title: Text('Disappearing messages'),
             subtitle: Text('Default message timer'),
             onTap: () {
-              // Navigate to selection screen
             },
             trailing: Icon(Icons.arrow_forward_ios, size: 16),
           ),
@@ -71,7 +67,6 @@ class PrivacySettingsScreen extends StatelessWidget {
             title: Text(''),
             subtitle: Text('Off'),
             onTap: () {
-              // Navigate to selection screen
             },
             trailing: Icon(Icons.arrow_forward_ios, size: 16),
           ),
