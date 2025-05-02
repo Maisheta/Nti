@@ -6,7 +6,7 @@ class SubscriptionPlans extends StatefulWidget {
 }
 
 class _SubscriptionPlansState extends State<SubscriptionPlans> {
-  String selectedPlan = 'Yearly'; // الخيار المُحدد افتراضيًا
+  String selectedPlan = 'Yearly'; 
 
   @override
   Widget build(BuildContext context) {
