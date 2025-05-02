@@ -38,7 +38,6 @@ class OrderConfirmationScreen extends StatelessWidget {
               SizedBox(height: 10),
               OutlinedButton(
                 onPressed: () {
-                  // Add continue shopping functionality
                 },
                 style: OutlinedButton.styleFrom(
                   minimumSize: Size(double.infinity, 50),
