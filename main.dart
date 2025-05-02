@@ -27,7 +27,6 @@ class MyApp extends StatelessWidget {
   }
 }
 
-// شاشة Order Confirmation
 class OrderConfirmationScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -38,7 +37,6 @@ class OrderConfirmationScreen extends StatelessWidget {
   }
 }
 
-// شاشة Privacy Settings
 class PrivacySettingsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -49,7 +47,6 @@ class PrivacySettingsScreen extends StatelessWidget {
   }
 }
 
-// شاشة Basket
 class BasketScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -57,7 +54,6 @@ class BasketScreen extends StatelessWidget {
   }
 }
 
-// شاشة Subscription Plans
 class SubscriptionPlansScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
