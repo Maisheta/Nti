@@ -15,7 +15,7 @@ class BasketItem extends StatelessWidget {
               borderRadius: BorderRadius.circular(8),
             ),
             child: Image.asset(
-              'assets/images/tropical_fruit_salad.jpg', // أضيفي الصورة في مجلد assets
+              'assets/login.png', // أضيفي الصورة في مجلد assets
               fit: BoxFit.cover,
             ),
           ),
