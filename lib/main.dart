@@ -15,55 +15,50 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Ecommerce App',
       theme: ThemeData(primarySwatch: Colors.blue),
-      initialRoute: '/order_confirmation',
+      home: HomeScreen(), 
       routes: {
         '/order_confirmation': (context) => OrderConfirmationScreen(),
         '/privacy_settings': (context) => PrivacySettingsScreen(),
-        '/basket': (context) => BasketScreen(),
-        '/subscription_plans': (context) => SubscriptionPlansScreen(),
+        '/basket': (context) => ProductScreen(),
+        '/subscription_plans': (context) => SubscriptionPlans(),
         '/contact_info': (context) => ContactInfoScreen(),
       },
     );
   }
 }
 
-// شاشة Order Confirmation
-class OrderConfirmationScreen extends StatelessWidget {
+class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Order Confirmation')),
-      body: OrderConfirmationScreen(),
-    );
-  }
-}
-
-// شاشة Privacy Settings
-class PrivacySettingsScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text('Privacy Settings')),
-      body: PrivacySettingsScreen(),
-    );
-  }
-}
-
-// شاشة Basket
-class BasketScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(appBar: AppBar(title: Text('Basket')), body: BasketItem());
-  }
-}
-
-// شاشة Subscription Plans
-class SubscriptionPlansScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text('Subscription Plans')),
-      body: SubscriptionPlans(),
+      appBar: AppBar(title: Text('Main Menu')),
+      body: ListView(
+        padding: EdgeInsets.all(16),
+        children: [
+          ElevatedButton(
+            onPressed:
+                () => Navigator.pushNamed(context, '/order_confirmation'),
+            child: Text('Order Confirmation'),
+          ),
+          ElevatedButton(
+            onPressed: () => Navigator.pushNamed(context, '/privacy_settings'),
+            child: Text('Privacy Settings'),
+          ),
+          ElevatedButton(
+            onPressed: () => Navigator.pushNamed(context, '/basket'),
+            child: Text('Basket'),
+          ),
+          ElevatedButton(
+            onPressed:
+                () => Navigator.pushNamed(context, '/subscription_plans'),
+            child: Text('Subscription Plans'),
+          ),
+          ElevatedButton(
+            onPressed: () => Navigator.pushNamed(context, '/contact_info'),
+            child: Text('Contact Info'),
+          ),
+        ],
+      ),
     );
   }
 }
