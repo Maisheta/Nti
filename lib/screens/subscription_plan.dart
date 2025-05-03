@@ -6,7 +6,7 @@ class SubscriptionPlans extends StatefulWidget {
 }
 
 class _SubscriptionPlansState extends State<SubscriptionPlans> {
-  String selectedPlan = 'Yearly'; // الخيار المُحدد افتراضيًا
+  String selectedPlan = 'Yearly'; 
 
   @override
   Widget build(BuildContext context) {
@@ -24,28 +24,6 @@ class _SubscriptionPlansState extends State<SubscriptionPlans> {
             });
           },
         ),
-        SubscriptionPlan(
-          plan: 'Monthly',
-          price: '€10.90',
-          duration: 'every month',
-          discount: '-53% discount',
-          isSelected: selectedPlan == 'Monthly',
-          onSelect: (value) {
-            setState(() {
-              selectedPlan = value;
-            });
-          },
-        ),
-        SubscriptionPlan(
-          plan: 'Weekly',
-          price: '€5.90',
-          duration: 'every week',
-          discount: '',
-          isSelected: selectedPlan == 'Weekly',
-          onSelect: (value) {
-            setState(() {
-              selectedPlan = value;
-            });
           },
         ),
       ],
