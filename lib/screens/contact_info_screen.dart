@@ -10,7 +10,10 @@ class ContactInfoScreen extends StatelessWidget {
           onPressed: () {
             Navigator.pop(context);
           },
-          child: Text('Cancel', style: TextStyle(color: Colors.blue)),
+          child: Text(
+            'Cancel',
+            style: TextStyle(color: Colors.blue, fontSize: 10),
+          ),
         ),
         actions: [
           TextButton(
